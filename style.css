@@ -1,0 +1,243 @@
+.AlignContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.AlignContainerSec {
+    width: 40%;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.594);
+    border-radius: 10px;
+}
+
+.AlignContainerSec h1 {
+
+    font-weight: 500;
+    text-align: center;
+}
+
+.AlignContainerSecH1 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.578);
+}
+
+.AlignContainerSec {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.AlignContainerSecH4 h3 {
+    font-weight: 500;
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+label {
+    font-family: sans-serif;
+}
+
+
+.AlignDivisions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+}
+
+.AlignDivisions button {
+    border: 1px solid rgb(243, 93, 148);
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    height: 40px;
+    width: 150px;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    border-radius: 7px;
+}
+
+.AlignDivisions button:focus {
+    border: 1px solid rgb(243, 93, 148);
+    cursor: pointer;
+    background-color: rgb(243, 93, 148);
+    color: white;
+}
+
+.schoolSec {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.AlignNumbers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.AlignNumbersSec {
+    display: flex;
+    gap: 10px;
+}
+
+.AlignNumbersSec button {
+    width: 100px;
+    border: 1px solid rgb(243, 93, 148);
+    border-radius: 7px;
+    font-size: 17px;
+    color: black;
+    background-color: white;
+    height: 40px;
+}
+
+.AlignNumbersSec button:focus {
+    border: 1px solid rgb(243, 93, 148);
+    background-color: rgb(243, 93, 148);
+    color: white;
+}
+
+.AlignGrownButton {
+    display: flex;
+    justify-content: center;
+}
+
+.AlignGrownButton button {
+    width: 150px;
+    border: 1px solid rgb(243, 93, 148);
+    border-radius: 7px;
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(243, 93, 148);
+    height: 40px;
+}
+
+.AlignDateSec h3 {
+    font-weight: 500;
+    text-align: center;
+}
+
+.AlignDateSec {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.578);
+}
+
+.AlignDateScButtons {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.AlignDateScButtons button {
+    width: 100%;
+    background-color: white;
+    border: none;
+    border-radius: 7px;
+    color: black;
+    padding: 20px 0px;
+
+}
+
+.AlignDateScButtons button:focus {
+    background-color: rgb(243, 93, 148);
+    color: white;
+}
+
+.SelectedButton {
+    background-color: rgb(243, 93, 148);
+}
+
+.AlignDateOr {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.AlignDateInput {
+    display: flex;
+    justify-content: center;
+}
+
+.AlignDateInput input {
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #b3c3f3;
+    padding-left: 10px;
+}
+
+.AlignTimeSec button {
+    border: 1px solid rgb(243, 93, 148);
+    color: rgba(0, 0, 0, 0.635);
+    font-size: 13px;
+    width: 100px;
+    border-radius: 6px;
+    height: 30px;
+    background-color: white;
+}
+
+.AlignTimeSec button:focus {
+    background-color: rgb(243, 93, 148);
+    color: white;
+}
+
+.AlignMobileInput {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+
+.AlignMobileInput input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #b3c3f3;
+    border-radius: 7px;
+    padding: 00px 10px;
+}
+
+.AlignMobileInput input:focus {
+    border: 1px solid #b3c3f3;
+}
+
+.AlignBookNowBtn button {
+    background: #F35D94;
+    width: 100%;
+    border: none;
+    padding: 20px 00px;
+    border-radius: 7px;
+    color: white;
+
+}
+
+@media only screen and (max-width: 900px) {
+    .AlignContainerSec {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 633px) {
+    .AlignNumbersSec button {
+        width: 50px;
+    }
+
+    .AlignTimeSec button {
+        width: 50px;
+        height: auto;
+        padding: 10px 00px;
+    }
+
+    .AlignContainerSec h1 {
+        font-size: 25px;
+    }
+}
