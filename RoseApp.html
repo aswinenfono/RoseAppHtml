@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -11,41 +12,38 @@
     <div class="AlignContainer">
         <div class="AlignContainerSec">
             <div class="AlignContainerSecH1">
-                <h1>
-                    Book for Free Demo Class and Counseling
-                </h1>
+                <h1>Book for Free Demo Class and Counseling</h1>
             </div>
             <div class="AlignContainerSecH4">
                 <h3>Select Your Child's Grade in School</h3>
             </div>
             <div class="schoolSec">
                 <div class="AlignDivisions">
-                    <button>LKG</button>
-                    <button>UKG</button>
+                    <button class="gradeButton Unselected " value="LKG">LKG</button>
+                    <button class="gradeButton Unselected" value="UKG">UKG</button>
                 </div>
                 <div class="AlignNumbers">
                     <div class="AlignNumbersSec">
-                        <button>1</button>
-                        <button>2</button>
-                        <button>3</button>
-                        <button>4</button>
-                        <button>5</button>
+                        <button class="gradeButton Unselected" value="1">1</button>
+                        <button class="gradeButton Unselected" value="2">2</button>
+                        <button class="gradeButton Unselected" value="3">3</button>
+                        <button class="gradeButton Unselected" value="4">4</button>
+                        <button class="gradeButton Unselected" value="5">5</button>
                     </div>
                     <div class="AlignNumbersSec">
-                        <button>6</button>
-                        <button>7</button>
-                        <button>8</button>
-                        <button>9</button>
-                        <button>10</button>
+                        <button class="gradeButton Unselected" value="6">6</button>
+                        <button class="gradeButton Unselected" value="7">7</button>
+                        <button class="gradeButton Unselected" value="8">8</button>
+                        <button class="gradeButton Unselected" value="9">9</button>
+                        <button class="gradeButton Unselected" value="10">10</button>
                     </div>
                     <div class="AlignNumbersSec">
-                        <button>11</button>
-                        <button>12</button>
+                        <button class="gradeButton Unselected" value="11">11</button>
+                        <button class="gradeButton Unselected" value="12">12</button>
                     </div>
                     <div class="AlignGrownButton">
-                        <button>Grown Up</button>
+                        <button class="gradeButton Unselected" value="Grown Up">Grown Up</button>
                     </div>
-
                 </div>
             </div>
             <div class="AlignDateSec">
@@ -53,60 +51,145 @@
             </div>
             <div class="AlignDateOr">
                 <div class="AlignDateScButtons">
-                    <button class="SelectedButton">TODAY</button>
-                    <button class="UnSelectedButton">TOMORROW</button>
-                    <button>DAY AFTER</button>
+                    <button class="AlignDateScButton" id="todayButton">TODAY</button>
+                    <button class="AlignDateScButton" id="tomorrowButton">TOMORROW</button>
+                    <button class="AlignDateScButton" id="dayAfterButton">DAY AFTER</button>
                 </div>
                 <div>
                     <h3>OR</h3>
                 </div>
                 <div class="AlignDateInput">
-                    <input type="date">
+                    <input type="date" id="dateInput">
                 </div>
                 <div class="AlignDateSec">
                     <h3>Select Time Slot</h3>
                 </div>
                 <div class="AlignNumbers">
                     <div class="AlignTimeSec">
-                        <button>3:00 PM</button>
-                        <button>4:00 PM</button>
-                        <button>5:00 PM</button>
-                        <button>6:00 PM</button>
-                        <button>7:00 PM</button>
+                        <button class="timeButton UnselectedTime" value="3:00 PM">3:00 PM</button>
+                        <button class="timeButton UnselectedTime" value="4:00 PM">4:00 PM</button>
+                        <button class="timeButton UnselectedTime" value="5:00 PM">5:00 PM</button>
+                        <button class="timeButton UnselectedTime" value="6:00 PM">6:00 PM</button>
+                        <button class="timeButton UnselectedTime" value="7:00 PM">7:00 PM</button>
                     </div>
                     <div class="AlignTimeSec">
-                        <button>8:00 PM</button>
-                        <button>9:00 PM</button>
+                        <button class="timeButton UnselectedTime" value="8:00 PM">8:00 PM</button>
+                        <button class="timeButton UnselectedTime" value="9:00 PM">9:00 PM</button>
                     </div>
-
-                 
-
                 </div>
             </div>
             <div class="AlignDateSec">
                 <h3>Please Enter Your Details</h3>
             </div>
             <div class="AlignMobileInput">
-                <label for="">Mobile number</label>
-                <input type="number" placeholder="Enter Phone Number With Country Code " id="">
+                <label for="mobileNumber">Mobile number</label>
+                <input type="number" placeholder="Enter Phone Number With Country Code " id="mobileNumber">
             </div>
             <div class="AlignMobileInput">
-                <label for="">Alternative Mobile number</label>
-                <input type="number" placeholder="Enter Phone Number With Country Code " id="">
+                <label for="altMobileNumber">Alternative Mobile number</label>
+                <input type="number" placeholder="Enter Phone Number With Country Code " id="altMobileNumber">
             </div>
             <div class="AlignMobileInput">
-                <label for="">Syllabus</label>
-                <input type="number" placeholder="Please Enter You Syllabus" id="">
+                <label for="syllabus">Syllabus</label>
+                <input type="text" placeholder="Please Enter Your Syllabus" id="syllabus">
             </div>
             <div class="AlignMobileInput">
-                <label for="">State</label>
-                <input type="text" placeholder="Please Enter You State" id="">
+                <label for="state">State</label>
+                <input type="text" placeholder="Please Enter Your State" id="state">
             </div>
             <div class="AlignBookNowBtn">
-                <button>Book Now</button>
+                <button id="bookNowButton">Book Now</button>
             </div>
         </div>
     </div>
+
+    <script>
+        const todayButton = document.getElementById('todayButton');
+        const tomorrowButton = document.getElementById('tomorrowButton');
+        const dayAfterButton = document.getElementById('dayAfterButton');
+        const dateInput = document.getElementById('dateInput');
+        const bookNowButton = document.getElementById('bookNowButton');
+        const mobileNumberInput = document.getElementById('mobileNumber');
+        const altMobileNumberInput = document.getElementById('altMobileNumber');
+        const syllabusInput = document.getElementById('syllabus');
+        const stateInput = document.getElementById('state');
+        const gradeButtons = document.querySelectorAll('.gradeButton');
+        const grownUpButton = document.querySelector('.GrownUpBtn');
+        const timeButtons = document.querySelectorAll('.timeButton');
+
+        const buttons = [todayButton, tomorrowButton, dayAfterButton];
+
+        let selectedGrade = '';
+        let selectedTime = '';
+
+        const setDateInputValue = (daysToAdd) => {
+            const date = new Date();
+            date.setDate(date.getDate() + daysToAdd);
+            const yyyy = date.getFullYear();
+            const mm = String(date.getMonth() + 1).padStart(2, '0');
+            const dd = String(date.getDate()).padStart(2, '0');
+            dateInput.value = `${yyyy}-${mm}-${dd}`;
+        };
+        document.addEventListener('DOMContentLoaded', () => {
+            // Set the "Grown Up" button as selected
+            const grownUpButton = document.querySelector('.gradeButton[value="Grown Up"]');
+            grownUpButton.classList.add('gradeButtonSelected');
+            selectedGrade = grownUpButton.value;
+
+            // Set the "9:00 PM" button as selected
+            const ninePmButton = document.querySelector('.timeButton[value="9:00 PM"]');
+            ninePmButton.classList.add('selectedTime');
+            selectedTime = ninePmButton.textContent;
+        });
+        const handleButtonClick = (button, daysToAdd) => {
+            setDateInputValue(daysToAdd);
+            buttons.forEach(btn => btn.classList.remove('selectedAlignDateScButton'));
+            button.classList.add('selectedAlignDateScButton');
+        };
+
+        todayButton.addEventListener('click', () => handleButtonClick(todayButton, 0));
+        tomorrowButton.addEventListener('click', () => handleButtonClick(tomorrowButton, 1));
+        dayAfterButton.addEventListener('click', () => handleButtonClick(dayAfterButton, 2));
+
+        // Set default date to today and highlight the today button
+        handleButtonClick(todayButton, 0);
+
+        const handleGradeButtonClick = (event) => {
+            gradeButtons.forEach(button => button.classList.remove('gradeButtonSelected'));
+            event.target.classList.add('gradeButtonSelected');
+            selectedGrade = event.target.value;
+        };
+
+        // const handleGrownUpButtonClick = (event) => {
+        //     gradeButtons.forEach(button => button.classList.remove('GrownUpSelected'));
+        //     grownUpButton.classList.add('GrownUpSelected');
+        //     selectedGrade = event.target.value;
+        // };
+
+        const handleTimeButtonClick = (event) => {
+            timeButtons.forEach(button => button.classList.remove('selectedTime'));
+            event.target.classList.add('selectedTime');
+            selectedTime = event.target.textContent;
+        };
+
+        gradeButtons.forEach(button => button.addEventListener('click', handleGradeButtonClick));
+        timeButtons.forEach(button => button.addEventListener('click', handleTimeButtonClick));
+
+        const sendToWhatsApp = () => {
+            const mobileNumber = mobileNumberInput.value;
+            const altMobileNumber = altMobileNumberInput.value;
+            const syllabus = syllabusInput.value;
+            const state = stateInput.value;
+            const date = dateInput.value;
+
+            const message = `Hi, I would like to book a free demo for my child in ${selectedGrade} Grade on ${date} at ${selectedTime}. My mobile number is ${mobileNumber}. Alternative Mobile number: ${altMobileNumber}. Syllabus: ${syllabus}. State: ${state}.`;
+
+            const whatsappLink = `https://wa.me/917006691010?text=${encodeURIComponent(message)}`;
+            window.open(whatsappLink, '_blank');
+        };
+
+        bookNowButton.addEventListener('click', sendToWhatsApp);
+    </script>
 
 </body>
 

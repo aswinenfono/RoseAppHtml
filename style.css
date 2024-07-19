@@ -51,24 +51,8 @@ label {
     width: 100%;
 }
 
-.AlignDivisions button {
-    border: 1px solid rgb(243, 93, 148);
-    cursor: pointer;
-    background-color: white;
-    color: black;
-    height: 40px;
-    width: 150px;
-    color: rgb(0, 0, 0);
-    font-size: 16px;
-    border-radius: 7px;
-}
 
-.AlignDivisions button:focus {
-    border: 1px solid rgb(243, 93, 148);
-    cursor: pointer;
-    background-color: rgb(243, 93, 148);
-    color: white;
-}
+
 
 .schoolSec {
     display: flex;
@@ -89,7 +73,14 @@ label {
     gap: 10px;
 }
 
-.AlignNumbersSec button {
+
+
+.AlignGrownButton {
+    display: flex;
+    justify-content: center;
+}
+
+.Unselected {
     width: 100px;
     border: 1px solid rgb(243, 93, 148);
     border-radius: 7px;
@@ -99,24 +90,33 @@ label {
     height: 40px;
 }
 
-.AlignNumbersSec button:focus {
+.gradeButtonSelected {
+    width: 100px;
+    border-radius: 7px;
+    font-size: 17px;
+    height: 40px;
     border: 1px solid rgb(243, 93, 148);
     background-color: rgb(243, 93, 148);
     color: white;
 }
 
-.AlignGrownButton {
-    display: flex;
-    justify-content: center;
-}
-
-.AlignGrownButton button {
+.GrownUpSelected {
     width: 150px;
     border: 1px solid rgb(243, 93, 148);
     border-radius: 7px;
     font-size: 17px;
     color: rgb(255, 255, 255);
     background-color: rgb(243, 93, 148);
+    height: 40px;
+}
+
+.GrownUpBtn {
+    width: 150px;
+    border: 1px solid rgb(243, 93, 148);
+    border-radius: 7px;
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     height: 40px;
 }
 
@@ -135,20 +135,9 @@ label {
     gap: 10px;
 }
 
-.AlignDateScButtons button {
-    width: 100%;
-    background-color: white;
-    border: none;
-    border-radius: 7px;
-    color: black;
-    padding: 20px 0px;
 
-}
 
-.AlignDateScButtons button:focus {
-    background-color: rgb(243, 93, 148);
-    color: white;
-}
+
 
 .SelectedButton {
     background-color: rgb(243, 93, 148);
@@ -172,9 +161,12 @@ label {
     border-radius: 5px;
     border: 1px solid #b3c3f3;
     padding-left: 10px;
+    background-color: white;
 }
 
-.AlignTimeSec button {
+
+
+.UnselectedTime {
     border: 1px solid rgb(243, 93, 148);
     color: rgba(0, 0, 0, 0.635);
     font-size: 13px;
@@ -184,7 +176,7 @@ label {
     background-color: white;
 }
 
-.AlignTimeSec button:focus {
+.selectedTime {
     background-color: rgb(243, 93, 148);
     color: white;
 }
@@ -220,7 +212,26 @@ label {
 
 }
 
-@media only screen and (max-width: 900px) {
+
+.AlignDateScButton {
+    width: 100%;
+    background-color: white;
+    border: none;
+    border-radius: 7px;
+    color: black;
+    padding: 20px 0px;
+}
+
+.selectedAlignDateScButton {
+    background-color: rgb(243, 93, 148);
+    color: white;
+    width: 100%;
+    border: none;
+    border-radius: 7px;
+    padding: 20px 0px;
+}
+
+@media only screen and (max-width: 1285px) {
     .AlignContainerSec {
         width: 100%;
     }
